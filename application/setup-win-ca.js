@@ -1,3 +1,5 @@
 // setup-win-ca.js
-require("win-ca");
-
+// Only run this on Windows
+if (process.platform === 'win32') {
+  require('win-ca')();
+}
